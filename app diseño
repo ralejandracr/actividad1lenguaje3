@@ -1,0 +1,183 @@
+amespace Actividad1Forms
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.groupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtFechaNacimiento = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.labelDireccion = new System.Windows.Forms.Label();
+            this.labelFechaNacimiento = new System.Windows.Forms.Label();
+            this.labelNombre = new System.Windows.Forms.Label();
+            this.comboBoxEstados = new System.Windows.Forms.ComboBox();
+            this.labelEstado = new System.Windows.Forms.Label();
+            this.groupBoxHorarios = new System.Windows.Forms.GroupBox();
+            this.rbVespertino = new System.Windows.Forms.RadioButton();
+            this.rbMatutino = new System.Windows.Forms.RadioButton();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.groupBoxDatos.SuspendLayout();
+            this.groupBoxHorarios.SuspendLayout();
+            this.SuspendLayout();
+
+            // Asignar el icono al formulario
+            this.Icon = new System.Drawing.Icon("C:\\Users\\reyna\\Downloads\\UMI.ico"); 
+            
+
+            // groupBoxDatos
+            this.groupBoxDatos.Controls.Add(this.txtDireccion);
+            this.groupBoxDatos.Controls.Add(this.txtFechaNacimiento);
+            this.groupBoxDatos.Controls.Add(this.txtNombre);
+            this.groupBoxDatos.Controls.Add(this.labelDireccion);
+            this.groupBoxDatos.Controls.Add(this.labelFechaNacimiento);
+            this.groupBoxDatos.Controls.Add(this.labelNombre);
+            this.groupBoxDatos.Location = new System.Drawing.Point(80, 70);
+            this.groupBoxDatos.Name = "groupBoxDatos";
+            this.groupBoxDatos.Size = new System.Drawing.Size(300, 150);
+            this.groupBoxDatos.TabIndex = 0;
+            this.groupBoxDatos.TabStop = false;
+            this.groupBoxDatos.Text = "Datos del Alumno";
+
+            // txtDireccion
+            this.txtDireccion.Location = new System.Drawing.Point(130, 100);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(150, 22);
+            this.txtDireccion.TabIndex = 5;
+
+            // txtFechaNacimiento
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(130, 65);
+            this.txtFechaNacimiento.Name = "txtFechaNacimiento";
+            this.txtFechaNacimiento.Size = new System.Drawing.Size(150, 22);
+            this.txtFechaNacimiento.TabIndex = 4;
+
+            // txtNombre
+            this.txtNombre.Location = new System.Drawing.Point(130, 30);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(150, 22);
+            this.txtNombre.TabIndex = 3;
+
+            // labelDireccion
+            this.labelDireccion.AutoSize = true;
+            this.labelDireccion.Location = new System.Drawing.Point(20, 100);
+            this.labelDireccion.Name = "labelDireccion";
+            this.labelDireccion.Size = new System.Drawing.Size(67, 16);
+            this.labelDireccion.TabIndex = 2;
+            this.labelDireccion.Text = "Dirección:";
+
+            // labelFechaNacimiento
+            this.labelFechaNacimiento.AutoSize = true;
+            this.labelFechaNacimiento.Location = new System.Drawing.Point(20, 65);
+            this.labelFechaNacimiento.Name = "labelFechaNacimiento";
+            this.labelFechaNacimiento.Size = new System.Drawing.Size(104, 16);
+            this.labelFechaNacimiento.TabIndex = 1;
+            this.labelFechaNacimiento.Text = "Fecha de Nac.:";
+
+            // labelNombre
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Location = new System.Drawing.Point(20, 30);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(59, 16);
+            this.labelNombre.TabIndex = 0;
+            this.labelNombre.Text = "Nombre:";
+
+            // comboBoxEstados
+            this.comboBoxEstados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEstados.FormattingEnabled = true;
+            this.comboBoxEstados.Location = new System.Drawing.Point(210, 240);
+            this.comboBoxEstados.Name = "comboBoxEstados";
+            this.comboBoxEstados.Size = new System.Drawing.Size(150, 24);
+            this.comboBoxEstados.TabIndex = 1;
+
+            // labelEstado
+            this.labelEstado.AutoSize = true;
+            this.labelEstado.Location = new System.Drawing.Point(130, 243);
+            this.labelEstado.Name = "labelEstado";
+            this.labelEstado.Size = new System.Drawing.Size(54, 16);
+            this.labelEstado.TabIndex = 6;
+            this.labelEstado.Text = "Estado:";
+
+            // groupBoxHorarios
+            this.groupBoxHorarios.Controls.Add(this.rbVespertino);
+            this.groupBoxHorarios.Controls.Add(this.rbMatutino);
+            this.groupBoxHorarios.Location = new System.Drawing.Point(400, 70);
+            this.groupBoxHorarios.Name = "groupBoxHorarios";
+            this.groupBoxHorarios.Size = new System.Drawing.Size(150, 100);
+            this.groupBoxHorarios.TabIndex = 2;
+            this.groupBoxHorarios.TabStop = false;
+            this.groupBoxHorarios.Text = "Horarios";
+
+            // rbVespertino
+            this.rbVespertino.AutoSize = true;
+            this.rbVespertino.Location = new System.Drawing.Point(20, 60);
+            this.rbVespertino.Name = "rbVespertino";
+            this.rbVespertino.Size = new System.Drawing.Size(92, 20);
+            this.rbVespertino.TabIndex = 1;
+            this.rbVespertino.TabStop = true;
+            this.rbVespertino.Text = "Vespertino";
+            this.rbVespertino.UseVisualStyleBackColor = true;
+
+            // rbMatutino
+            this.rbMatutino.AutoSize = true;
+            this.rbMatutino.Location = new System.Drawing.Point(20, 30);
+            this.rbMatutino.Name = "rbMatutino";
+            this.rbMatutino.Size = new System.Drawing.Size(80, 20);
+            this.rbMatutino.TabIndex = 0;
+            this.rbMatutino.TabStop = true;
+            this.rbMatutino.Text = "Matutino";
+            this.rbMatutino.UseVisualStyleBackColor = true;
+
+            // btnGuardar
+            this.btnGuardar.Location = new System.Drawing.Point(250, 300);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(80, 30);
+            this.btnGuardar.TabIndex = 3;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+
+            // Form1
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.Controls.Add(this.labelEstado);
+            this.Controls.Add(this.comboBoxEstados);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.groupBoxHorarios);
+            this.Controls.Add(this.groupBoxDatos);
+            this.Name = "Form1";
+            this.Text = "Expediente de alumno";
+            this.groupBoxDatos.ResumeLayout(false);
+            this.groupBoxDatos.PerformLayout();
+            this.groupBoxHorarios.ResumeLayout(false);
+            this.groupBoxHorarios.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+
+        private System.Windows.Forms.GroupBox groupBoxDatos;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtFechaNacimiento;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label labelDireccion;
+        private System.Windows.Forms.Label labelFechaNacimiento;
+        private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.ComboBox comboBoxEstados;
+        private System.Windows.Forms.Label labelEstado;
+        private System.Windows.Forms.GroupBox groupBoxHorarios;
+        private System.Windows.Forms.RadioButton rbVespertino;
+        private System.Windows.Forms.RadioButton rbMatutino;
+        private System.Windows.Forms.Button btnGuardar;
+    }
+}
