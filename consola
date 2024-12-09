@@ -1,0 +1,41 @@
+using System;
+
+namespace Actividad1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Mensaje inicial
+            Console.WriteLine("Bienvenidos a UMI/Universidad Coppel");
+            Console.WriteLine("------------------------------------");
+
+            // Solicitud de datos
+            Console.Write("Ingrese su Nombre Completo: ");
+            string nombreCompleto = Console.ReadLine();
+
+            Console.Write("Ingrese su Edad: ");
+            int edad = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese su Fecha de Nacimiento (dd/mm/yyyy): ");
+            string fechaNacimiento = Console.ReadLine();
+
+            Console.Write("Ingrese la Carrera a la que desea ingresar: ");
+            string carrera = Console.ReadLine();
+
+            // Mensaje de bienvenida personalizado
+            Console.WriteLine($"\nGracias {nombreCompleto} por formar parte de UMI/Universidad Coppel, Bienvenido a la carrera {carrera}.");
+
+            // Mostrar todos los datos ingresados
+            Console.WriteLine("\nDatos ingresados del aspirante:");
+            Console.WriteLine($"Nombre Completo: {nombreCompleto}");
+            Console.WriteLine($"Edad: {edad}");
+            Console.WriteLine($"Fecha de Nacimiento: {fechaNacimiento}");
+            Console.WriteLine($"Carrera Deseada: {carrera}");
+
+            // Pausar la consola
+            Console.WriteLine("\nPresione cualquier tecla para salir...");
+            Console.ReadKey();
+        }
+    }
+}
