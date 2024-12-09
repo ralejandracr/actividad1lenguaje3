@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Actividad1Forms
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+            // Asignar el icono a la barra de título del formulario
+            this.Icon = new System.Drawing.Icon("C:\\Users\\reyna\\Downloads\\UMI.ico"); 
+           
+
+            // Llenar la lista de estados en el ComboBox
+            comboBoxEstados.Items.AddRange(new string[]
+            {
+                "Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua",
+                "Coahuila", "Colima", "Ciudad de México", "Durango", "Guanajuato", "Guerrero", "Hidalgo",
+                "Jalisco", "Estado de México", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca",
+                "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco",
+                "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"
+            });
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            // Capturar datos ingresados por el usuario
+            string nombre = txtNombre.Text;
+            string fechaNacimiento = txtFechaNacimiento.Text;
+            string direccion = txtDireccion.Text;
+            string estado = comboBoxEstados.SelectedItem?.ToString() ?? "No seleccionado";
+            string horario = rbMatutino.Checked ? "Matutino" : rbVespertino.Checked ? "Vespertino" : "No seleccionado";
+
+            // Mostrar mensaje con los datos capturados
+            MessageBox.Show(
+                $"Datos del Alumno:\n\n" +
+                $"Nombre: {nombre}\n" +
+                $"Fecha de Nacimiento: {fechaNacimiento}\n" +
+                $"Dirección: {direccion}\n" +
+                $"Estado: {estado}\n" +
+                $"Horario: {horario}",
+                "Información Guardada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
+    }
+}
